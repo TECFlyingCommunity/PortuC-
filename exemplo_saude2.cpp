@@ -47,12 +47,12 @@ inteiro inicio(inteiro argc, caractere** argv) {
     escreva << pular << "\aBEM VINDO\a" << pular;
     escreva << pular << "Digite o seu nome " << pular;
     leia>>nome;
-    sistema("cls");
+    sistema("clear");
     escreva << pular << "Muito obrigado por utlizar o nosso aplicativo senhor(a)  " << pular << pular << pular;
     faca{
         escreva << pular << "\aVocê deseja ver o tutorial ? " << pular << "Digite s se sim\a " << pular << "Digite n se nao\a" << pular;
         leia>>opcao;
-        sistema("cls");
+        sistema("clear");
         } enquanto(opcao diferente 's' e opcao diferente 'n');
 
     escolha(opcao) {
@@ -62,35 +62,36 @@ inteiro inicio(inteiro argc, caractere** argv) {
                 escreva << pular << "Vamos começa " << pular << pular;
         pare;
     }
-    sistema("pause");
-    sistema("cls");
+    //sistema("pause");
+    sistema("clear");
     faca{
         faca{
             escreva << pular << "\aPor favor digite " << pular << "h Se voce for homem\a " << pular << "m Se for mulher\a" << pular;
             leia>>sexo;
             } enquanto(sexo diferente 'h' e sexo diferente 'm');
-        sistema("cls");
+        sistema("clear");
         escreva << pular << "Digite o seu peso";
         leia>>peso;
-        sistema("cls");
+        sistema("clear");
         escreva << pular << "Digite a sua altura (ex:1,65)";
         leia>>altura;
-        sistema("cls");
+        sistema("clear");
         escreva << pular << "Digite a sua idade";
         leia>>idade;
-        sistema("cls");
+        sistema("clear");
         altura_raiz = sqrt(altura);
         faca{
             faca{
                 escreva << pular << "Qual calculo você deseja executa" << pular << pular << "a-Todos os calculos de uma vez só" << pular << "b-TBM:Taxa Metabólica Basal" << pular << "c-IMC:Índice de Massa Corporal" << pular << "d-Peso Normal" << pular << "e-Peso Ideal" << pular << "f-Calculo IAC:Índice de Adiposidade Corporal";
-                leia>>opcao;} enquanto(opcao diferente 'a' e opcao diferente 'b' e opcao diferente 'c' e opcao diferente 'd' e opcao diferente 'e' e opcao diferente 'f');
-            sistema("cls");
+                leia>>opcao;
+                } enquanto(opcao diferente 'a' e opcao diferente 'b' e opcao diferente 'c' e opcao diferente 'd' e opcao diferente 'e' e opcao diferente 'f');
+            sistema("clear");
             se(opcao == 'f' ou opcao == 'a')
             {
                 escreva << "Medida faca quadril";
                 leia>>quadril;
             }
-            sistema("cls");
+            sistema("clear");
             escolha(opcao)
             {
                 caso'a' :
@@ -105,7 +106,7 @@ inteiro inicio(inteiro argc, caractere** argv) {
                             leia>>naf;
                             pare;
                     }
-                    sistema("cls");
+                    sistema("clear");
                     alturacentimetros = altura * 100;
                     pesonormal = alturacentimetros - 100;
                     escreva << pular << "Segundo o calculo faca Peso Normal  o seu peso normal é de " << pesonormal << pular;
@@ -162,7 +163,7 @@ inteiro inicio(inteiro argc, caractere** argv) {
                             leia>>naf;
                             pare;
                     }
-                    sistema("cls");
+                    sistema("clear");
                     escolha(sexo)
                     {
                         caso 'h' :
@@ -211,17 +212,17 @@ inteiro inicio(inteiro argc, caractere** argv) {
                 }
                 pare;
             }
-            sistema("pause");
-            sistema("cls");
+            //sistema("pause");
+            sistema("clear");
             faca{
                 escreva << pular << pular << "\aVocê deseja executar outro calculo?" << pular << "\as para sim" << pular << "\an para nao";
                 leia>>opcao;} enquanto(opcao diferente 's' e opcao diferente 'n');
-            sistema("cls");} enquanto(opcao == 's');
+            sistema("clear");} enquanto(opcao == 's');
         faca{
             escreva << pular << "\aVocê deseja executar o programa novamente " << pular << "s para sim\a " << pular << "n para nao\a ";
             leia>>opcao;} enquanto(opcao diferente 's' e opcao diferente 'n');} enquanto(opcao == 's');
-    sistema("cls");
-    sistema("pause");
+    sistema("clear");
+    //sistema("pause");
 }
 
 vazio imc_resultado(real imc, real idade, caractere sexo) {
