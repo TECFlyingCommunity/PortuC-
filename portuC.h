@@ -51,9 +51,23 @@
 #define e &&
 #define vazio void
 #define sistema system 
-
-
-
+#define classe class
+#define publico public
+#define privado private
+#define executar run 
+#define dublo double 
+#define longo long
+#define emlinha inline 
+#define curto short
+#define estatico static 
+#define continuar continue
+#define novo new 
+#define deletar delete  
+#define este this
+#define protegido protected
+#define tentar try
+#define lancar throw
+#define pegar catch
 
 
 
